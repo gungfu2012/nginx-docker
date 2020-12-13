@@ -4,8 +4,8 @@ COPY README.md /usr/share/nginx/html
 
 RUN ls -l /etc/nginx/
 
-RUN ls -l /etc/nginx/conf.d/
+RUN more /etc/nginx/nginx.conf
 
 RUN rm /etc/nginx/conf.d/default.conf
 
-COPY conf /etc/nginx
+COPY default.conf /etc/nginx/nginx.conf
